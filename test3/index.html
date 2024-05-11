@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anouar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+function aboutclicked() {
+    document.getElementById('aboutdiv').scrollIntoView({ behavior: 'smooth' });
+}
+
+function menuclicked() {
+  console.log("menuclicked");
+    var menuContent = document.getElementById("menudiv");
+    if (menuContent.style.display = 'none') {
+        menuContent.style.display = "block";
+    } else {
+    console.log("none");
+        menuContent.style.display = none;
+    }
+}
+
+
+document.querySelectorAll('#amdv').forEach(item => {
+    item.addEventListener('click', function() {
+      colsole.log("amdvclicked");
+    menuclicked();
+    /* this is not working 
+       a problem for later */
+    });});
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="justify-content: end; font-size: large;">
+                <li><a href="#herosection">Home</a></li>
+                <li><a href="#aboutdiv">About</a></li>
+                <li><a href="#skillsdiv">Skills</a></li>
+                <li><a href="#certificationsdiv">Certifications</a></li>
+                <li><a href="#projectsdiv">Projects</a></li>
+                <li><a href="#contactdiv">Contact</a></li>
+                <button style="border-radius: 5px; margin-right: 5vw;
+                background-color: #3a4fe5; color: #fefeff; padding: 2vw;
+                border-width: 0; background-image: url('menubutton.png'); display: none;" onclick="menuclicked()">M</button>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+<div id="menudiv" style="position: absolute; width: 100%; height: 100vh; 
+      background-color: #fefeff; z-index: 1001; align-items: center;
+      ">
+
+  <nav style="display: flex; justify-content: center; align-items: center;">
+    <ul style="justify-content: center; font-size: large;
+     align-items: center;">
+        <li><a id="amdv" href="#herosection">Home</a></li>
+        <li><a id="amdv" href="#aboutdiv">About</a></li>
+        <li><a id="amdv" href="#skillsdiv">Skills</a></li>
+        <li><a id="amdv" href="#certificationsdiv">Certifications</a></li>
+        <li><a id="amdv" href="#projectsdiv">Projects</a></li>
+        <li><a id="amdv" href="#contactdiv">Contact</a></li>
+
+    </ul>
+</nav>
+
+</div>
+
+
+
+  <div id="herosection" style="background-image: url('background1.jpg'); background-size: cover; 
+              background-position: center center; width: 100%; height: 57vh;
+              border-bottom-right-radius: 100px;">
+
+      <div style="display: flex; justify-content:space-around; align-items:center; width: 80%; margin: 0 auto;">
+          <div style="flex: 1;">
+              <h1 style="color: #fefeff; font-size: 7vh;">I'm Anouar</h1>
+              <h4 style="color: #fefeff; font-size: 3vh;">Tech & Business Ethusiast</h4>
+          </div>
+          <div style="flex: 1; max-width: 100%; height: auto;">
+              <!--img id="myphoto" src="me.jpg" alt="my photo" style="flex: 1; max-width: 100%; height: auto;"-->
+          </div>
+      </div>
+      <p id="currently" style="color: rgb(238, 233, 233); width: 50%; margin-left: 10%; font-size: 2.5vh;">I'm currently focusing on delivering results in web design, graphic design, and marketing services</p>
+
+        <button id="aboutbtn" onclick="aboutclicked()">About Me</button>
+
+  </div>        
+  <div>
+      <div id="aboutdiv">
+        <h1 style="display: flex; justify-content: center; color: #4155b2;">About Me</h1>
+        <p id="about" style="width: 80%; margin: 0 auto; text-align: center; color: #7b7b7a;">
+          I'm currently refreshing my skills with a Michigan web design course before diving into React. With expertise in WordPress, graphic design, and digital marketing, as well as Python, C#, HTML, and CSS, I also have experience in Unity and Xamarin. Combining a tech background with a passion for business and global economics, I'm immersing myself in finance to make an impact. Dedicated to delivering innovative solutions, I stay updated on tech trends and market needs.
+
+        </p>
+
+      </div>
+
+      <div id="educationdiv">
+        <h1 style="display: flex; justify-content: center; color: #4155b2;">Education</h1>
+        <p style="width: 80%; margin: 0 auto; text-align: center; color: #343a40; font-weight: bold;">
+          Institute specialized in offshoring professions Tétouan
+          <br>Sep 2022 - Jul 2023
+          <br>Graphic Design
+          <br>
+          <br>Université Abdelmalek Essaâdi Tétouan
+          <br>2020
+          <br>Physics
+
+        </p>
+
+      </div>
+
+      <div id="skillsdiv">
+        <h1 style="display: flex; justify-content: center; color: #4155b2;">Skills</h1>
+
+
+        <div class="skillsdiv" style="flex-wrap: wrap; margin: 5%; display: flex; justify-content: space-around; padding-left: 10%;">
+
+          <div>
+                <div style="margin-bottom: 10px;"><h4 style="color: #343a40;">Graphic Design</h5></div>
+                <div style="width: 200px; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                    <div style="height: 100%; background-color: #3a4fe5; width: 80%;"></div>
+                </div>
+                <div style="margin-bottom: 10px;"><h4 style="color: #343a40;">Web Design</h5></div>
+                <div style="width: 200px; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                    <div style="height: 100%; background-color: #3a4fe5; width: 70%;"></div>
+                </div>
+                <div style="margin-bottom: 10px;"><h4 style="color: #343a40;">WordPress</h5></div>
+                <div style="width: 200px; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                    <div style="height: 100%; background-color: #3a4fe5; width: 80%;"></div>
+                </div>
+                <div style="margin-bottom: 10px;"><h4 style="color: #343a40;">Advertising</h5></div>
+                <div style="width: 200px; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                    <div style="height: 100%; background-color: #3a4fe5; width: 50%;"></div>
+                </div>
+          </div>
+
+          <div>      
+
+                <div style="margin-bottom: 10px;"><h4 style="color: #343a40;">Python Coding</h5></div>
+                <div style="width: 200px; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                    <div style="height: 100%; background-color: #3a4fe5; width: 75%;"></div>
+                </div>
+
+                <div style="margin-bottom: 10px;"><h4 style="color: #343a40;">C# Coding</h5></div>
+                <div style="width: 200px; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                    <div style="height: 100%; background-color: #3a4fe5; width: 75%;"></div>
+                </div>
+
+                <div style="margin-bottom: 10px;"><h4 style="color: #343a40;">Game Dev</h5></div>
+                <div style="width: 200px; height: 20px; background-color: #f0f0f0; border-radius: 10px; overflow: hidden; margin-bottom: 10px;">
+                    <div style="height: 100%; background-color: #3a4fe5; width: 60%;"></div>
+                </div>
+
+          </div>
+
+          </div>
+
+        
+
+      </div>
+
+      <div id="certificationsdiv">
+        <h1 style="display: flex; justify-content: center; color: #4155b2;">Certifications</h1>
+        
+        <div class="certificationsdiv" style="display:flex; flex-wrap: wrap; justify-content: space-around; width: 80%; margin: auto;">
+        <p style="width: 80%; margin: 0 auto; text-align: center; color: #343a40; font-weight: bold;">
+          
+              Programming with JavaScript
+              <br>Meta - Issued Feb 2024
+              <br>Skills Covered: JSON · JavaScript · Jest
+              <br><br>
+              Accounting Foundations
+              <br>National Association of State Boards of Accountancy (NASBA) - IssuedJan 2024
+              <br><br>
+              Project Management Basics
+              <br>Great Learning - Issued Jan 2024
+              <br><br>
+              RITx Business Communication
+              <br>edX - Issued Nov 2023
+
+              <br><br>
+            </p>
+            <p style="width: 80%; margin: 0 auto; text-align: center; color: #343a40; font-weight: bold;">
+              Graphic Designer
+              <br>Institute specialized in offshoring professions tetouan - Issued Jul 2023
+              <br>Skills: Market Research · Printing · Branding · Graphic Design
+              <br><br>
+              Diploma in Graphic Design
+              <br>Alison - Issued Mar 2023
+              <br><br>
+              Scientific Computing With Python
+              <br>freeCodeCamp - Issued Jan 2022
+              <br><br>
+              Responsive Web Design
+              <br>freeCodeCamp - Issued Dec 2021
+              <br>Skills Covered: Cascading Style Sheets (CSS) · HTML5
+
+        </p>
+      </div>
+        
+      </div>
+      <div id="projectsdiv" style="margin: auto;">
+        <h1 style="display: flex; justify-content: space-around; color: #4155b2;">Projects</h1>
+        <p style="display: flex; justify-content: space-around; color: #7b7b7a;">Includes WordPress Websites, Graphic Design, Games, Mobile Apps and AR Apps</p>
+        <div class="projectsdiv" style="display:flex; width: 80%; margin: auto;">
+          <img src="sojourn.png"></img>
+          <img src="racegame.png"></img>
+            
+              </img>
+        </div>
+        <div class="projectsdiv2" style="display:flex; width: 75%; margin: auto;">
+          <img src="novar-website-1.png"></img>
+          <img src="doctorbusinesscard.png"></img>
+          <img src="myarapp1.jpg"></img>
+
+    </div>
+
+
+
+
+
+      </div>
+
+      <div id="contactdiv">
+        <h1 style="display: flex; justify-content: center; color: #4155b2;">Contact</h1>
+
+        <div class="contactdiv" style="display:flex; width: 80%; margin: 8%;">
+              <div>
+              <h2 style="color: #343a40;">Get In Touch</h2>
+                <p style="width: 80%; color: #7b7b7a;">
+                  Do not hesitate to reach out. Just fill in the contact form here, and we’ll be sure to reply as fast as possible. Or contact us by email at contact@zeklat.tech, We're here to assist you!
+                </p>
+
+            </div>
+            <div>
+              <h4 style="color: #343a40;">Full Name</h4>
+              <input />
+              <h4 style="color: #343a40;">Email</h4>
+              <input type="email"/>
+              <h4 style="color: #343a40;">Message</h4>
+              <textarea style="resize: vertical; height: 12vh;"></textarea>
+              <button style="    display: flex; padding: 1.5%; border-radius: 4px;
+              background-color: #3a4fe5; color: #fefeff; padding-left:3%; padding-right: 3%;
+              border-width: 0;">Submit</button>
+            </div>
+        </div>
+
+      </div>
+
+  </div>
+
+
+</main>
+
+    <footer>
+        <p>&copy; 2024 Anouar Zeklat</p>
+    </footer>
+</body>
+</html>
